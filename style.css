@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: antiquewhite;
+    max-width: 1200px;
+    width: 97%;
+    min-height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrera horisontellt och vertikalt */
+    align-items: center;
+}
+
+.main {
+    background-image: url('bakgrundd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 250px;
+    display: grid; /* Använd grid för layouten */
+    grid-template-rows: 2fr 1fr 1fr; /* Tre rader: överst, mitten, meddelande */
+    grid-row-gap: 10px; /* Lägg till lite mellanrum mellan rader */
+    align-items: center; /* Centrera elementen vertikalt */   
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+
+#loginKnapp, #loggaUtKnapp{
+    width: 80%;
+    margin-top: 10px;
+    height: 40px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;   
+}
+#loggaUtKnapp{
+    margin-left: 25px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
